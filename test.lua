@@ -1,5 +1,6 @@
 -- testing the module oled.lua on x86 LUA
 local oled = require "oled"
+local oled_font = require "oled_basic_font"
 
 -- mock i2c
 i2c = {}
@@ -39,3 +40,6 @@ print "\n"
 
 -- test init
 oled.init(1,2)
+
+print(oled_font.chars[1])
+print(oled_font.char_value('a'))

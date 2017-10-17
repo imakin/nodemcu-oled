@@ -82,5 +82,7 @@ function oled.display()
 	
 end
 
+--~ function oled
+
 
 return oled
